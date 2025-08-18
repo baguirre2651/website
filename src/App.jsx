@@ -84,7 +84,7 @@ export default function App() {
         </div>
 
         <div className="image">
-          <img draggable="false" className="tilt" src="/assets/images/bryan.png" alt="Bryan" />
+          <img draggable="false" className="tilt" src="/website/assets/images/bryan.png" alt="Bryan" />
         </div>
       </section>
       {/* hero section ends */}
@@ -97,7 +97,7 @@ export default function App() {
 
         <div className="row">
           <div className="image">
-            <img draggable="false" className="tilt" src="/assets/images/grad.JPG" alt="Graduation" />
+            <img draggable="false" className="tilt" src="/website/assets/images/grad.JPG" alt="Graduation" />
           </div>
           <div className="content">
             <h3>I&apos;m Bryan Aguirre</h3>
@@ -190,7 +190,7 @@ export default function App() {
         <div className="box-container">
           <div className="box">
             <div className="image">
-              <img draggable="false" src="/assets/images/ucberkeley.png" alt="UC Berkeley" />
+              <img draggable="false" src="/website/assets/images/ucberkeley.png" alt="UC Berkeley" />
             </div>
             <div className="content">
               <h3>UC Berkeley</h3>
