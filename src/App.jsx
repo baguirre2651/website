@@ -1,9 +1,5 @@
 import { useEffect, useState } from "react";
-import bryan from "./assets/bryan.png"
 
-export default function Hero() {
-  return <img src={bryan} alt="Bryan" />
-}
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -344,5 +340,7 @@ export default function App() {
         id="scroll-top"
       ></a>
     </>
+
+    
   );
 }
