@@ -118,7 +118,7 @@ export default function App() {
 
             <div className="resumebtn">
               <a
-                href="https://drive.google.com/file/d/1S1fXEaN7iEqcpjr2HUcvRUh1eJuyGg2w/view?usp=drive_link"
+                href="https://drive.google.com/drive/folders/1w4fUibbj6igpieaDcKRko3u6eQnHXjqD?dmr=1&ec=wgc-drive-hero-goto"
                 target="_blank"
                 rel="noreferrer"
                 className="btn"
