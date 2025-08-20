@@ -99,7 +99,7 @@ export default function App() {
           <div className="image">
             <img draggable="false" className="tilt" src="/website/assets/images/grad.JPG" alt="Graduation" />
           </div>
-          <div className="content">
+          <div className="content"style={{ color: '#0E2431' }}>
             <h3>I&apos;m Bryan Aguirre</h3>
             <span className="tag">Data Scientist &amp; Economist</span>
 
