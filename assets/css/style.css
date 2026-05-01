@@ -36,6 +36,12 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 img {
@@ -191,6 +197,7 @@ section {
 
 .hero__copy {
   max-width: 800px;
+  animation: fade-up 620ms ease both;
 }
 
 .kicker {
@@ -302,6 +309,15 @@ section {
   border: 1px solid var(--line);
   border-radius: 12px;
   box-shadow: 0 18px 45px rgba(6, 24, 49, 0.1);
+  animation: image-in 720ms ease 120ms both;
+  transition:
+    transform 260ms ease,
+    box-shadow 260ms ease;
+}
+
+.hero__image:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 54px rgba(6, 24, 49, 0.14);
 }
 
 .section-label {
@@ -496,6 +512,14 @@ section {
   align-items: start;
   padding: 1rem 0;
   border-bottom: 1px solid var(--line);
+  transition:
+    background-color 180ms ease,
+    padding-left 180ms ease;
+}
+
+.work-row:hover {
+  padding-left: 0.5rem;
+  background: linear-gradient(90deg, rgba(21, 93, 252, 0.055), transparent 55%);
 }
 
 .work-row:hover .work-row__title {
@@ -557,6 +581,11 @@ section {
   align-items: start;
   padding: 1rem 0;
   border-bottom: 1px solid var(--line);
+  transition: background-color 180ms ease;
+}
+
+.stack-card:hover {
+  background: rgba(21, 93, 252, 0.035);
 }
 
 .stack-card h3 {
@@ -640,6 +669,14 @@ section {
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: 10px;
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.education-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 42px rgba(6, 24, 49, 0.08);
 }
 
 .education-card img {
@@ -749,13 +786,46 @@ section {
   opacity: 0;
   transform: translateY(16px);
   transition:
-    opacity 520ms ease,
-    transform 520ms ease;
+    opacity 620ms ease,
+    transform 620ms ease;
 }
 
 .reveal.in-view {
   opacity: 1;
   transform: translateY(0);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes image-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
 }
 
 @media (max-width: 860px) {
