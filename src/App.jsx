@@ -103,14 +103,6 @@ const experience = [
       "Built predictive models, dashboards, validation workflows, and data pipelines that translated complex risk probabilities into decisions stakeholders could act on.",
   },
   {
-    date: "Summer 2024",
-    role: "Data Analyst Fellow",
-    company: "UCLA Engineering",
-    place: "Los Angeles, CA",
-    description:
-      "Designed management pipelines and regression models, simplified ML concepts for stakeholders, and ran A/B tests that improved model accuracy and precision.",
-  },
-  {
     date: "Summer 2023",
     role: "Data Analyst Intern",
     company: "SA Photonics / CACI",
@@ -287,7 +279,7 @@ export default function App() {
               <div className="intro__actions">
                 <a
                   className="button button--inline"
-                  href="https://drive.google.com/file/d/1r_iPeOQe8kb904sPMAnmYDSx4s0zsGgs/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1VgrrelNuVxLwO-oEAGgC_qhE90aIfvHu/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                 >
