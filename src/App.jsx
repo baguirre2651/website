@@ -95,6 +95,14 @@ const projects = [
 
 const experience = [
   {
+    date: "Oct 2025 - Present",
+    role: "Founder / Full-Stack Developer / Web Designer",
+    company: "In Search Of",
+    place: "New York City, NY",
+    description:
+      "Founded a reverse fashion marketplace, built an MCP-powered Python vision authentication system with live market valuations, and deployed a React/Next.js platform with cross-platform search, auction tracking, and auto-bidding.",
+  },
+  {
     date: "2025 - 2026",
     role: "Junior Data Scientist",
     company: "Y Equals X",
@@ -117,6 +125,14 @@ const experience = [
     place: "San Francisco, CA",
     description:
       "Optimized data workflows and turned noisy regression analysis into strategic narratives for operational teams.",
+  },
+  {
+    date: "Jun 2021 - Aug 2021",
+    role: "Customer Success Data Engineering Intern",
+    company: "Superior Care Health Department",
+    place: "Bellflower, CA",
+    description:
+      "Analyzed customer data in SQL to identify demand patterns, compare demand across locations, and transform raw data-lake records into reliable tables for pricing, staffing, scheduling, and outreach decisions.",
   },
 ];
 
