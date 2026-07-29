@@ -98,6 +98,7 @@ const experience = [
     date: "Oct 2025 - Present",
     role: "Founder / Full-Stack Developer / Web Designer",
     company: "In Search Of",
+    href: "https://www.iso-us.com",
     place: "New York City, NY",
     description:
       "Founded a reverse fashion marketplace, built an MCP-powered Python vision authentication system with live market valuations, and deployed a React/Next.js platform with cross-platform search, auction tracking, and auto-bidding.",
@@ -325,7 +326,14 @@ export default function App() {
                 <div>
                   <h3>{item.role}</h3>
                   <p className="timeline-row__company">
-                    {item.company} / {item.place}
+                    {item.href ? (
+                      <a href={item.href} target="_blank" rel="noreferrer">
+                        {item.company}
+                      </a>
+                    ) : (
+                      item.company
+                    )}{" "}
+                    / {item.place}
                   </p>
                   <p>{item.description}</p>
                 </div>
