@@ -272,7 +272,7 @@ export default function App() {
             </div>
             <div className="about-copy">
               <h3>I&apos;m Bryan Aguirre</h3>
-              <p className="about-tag">AI Engineer, Product Builder, Creative Technologist</p>
+              <p className="about-tag">AI Engineer, Product Builder, Data Scientist</p>
               <p>
                 I&apos;m a UC Berkeley graduate with a degree in Data Science
                 and an emphasis in Economics, now based in New York City. My
@@ -312,35 +312,24 @@ export default function App() {
           </div>
         </section>
 
-        <section className="work reveal" id="work">
-          <SectionLabel number="02">Selected Work</SectionLabel>
+        <section className="experience reveal" id="experience">
+          <SectionLabel number="02">Experience</SectionLabel>
           <div className="section-heading">
-              <h2>Selected work.</h2>
-            <p>
-              Marketplaces, forecasting, machine learning, and applied language
-              models.
-            </p>
+            <h2>Experience.</h2>
           </div>
 
-          <div className="work-list">
-            {projects.map((project) => (
-              <a
-                className="work-row"
-                href={project.href}
-                target="_blank"
-                rel="noreferrer"
-                key={project.title}
-              >
-                <span className="work-row__number">{project.number}</span>
-                <span className="work-row__title">{project.title}</span>
-                <span className="work-row__meta">
-                  {project.year} / {project.role}
-                </span>
-                <span className="work-row__arrow" aria-hidden="true">
-                  ↗
-                </span>
-                <p>{project.description}</p>
-              </a>
+          <div className="timeline">
+            {experience.map((item) => (
+              <article className="timeline-row" key={`${item.company}-${item.date}`}>
+                <time>{item.date}</time>
+                <div>
+                  <h3>{item.role}</h3>
+                  <p className="timeline-row__company">
+                    {item.company} / {item.place}
+                  </p>
+                  <p>{item.description}</p>
+                </div>
+              </article>
             ))}
           </div>
         </section>
@@ -373,24 +362,35 @@ export default function App() {
           </div>
         </section>
 
-        <section className="experience reveal" id="experience">
-          <SectionLabel number="04">Experience</SectionLabel>
+        <section className="work reveal" id="work">
+          <SectionLabel number="04">Selected Work</SectionLabel>
           <div className="section-heading">
-            <h2>Experience.</h2>
+            <h2>Selected work.</h2>
+            <p>
+              Marketplaces, forecasting, machine learning, and applied language
+              models.
+            </p>
           </div>
 
-          <div className="timeline">
-            {experience.map((item) => (
-              <article className="timeline-row" key={`${item.company}-${item.date}`}>
-                <time>{item.date}</time>
-                <div>
-                  <h3>{item.role}</h3>
-                  <p className="timeline-row__company">
-                    {item.company} / {item.place}
-                  </p>
-                  <p>{item.description}</p>
-                </div>
-              </article>
+          <div className="work-list">
+            {projects.map((project) => (
+              <a
+                className="work-row"
+                href={project.href}
+                target="_blank"
+                rel="noreferrer"
+                key={project.title}
+              >
+                <span className="work-row__number">{project.number}</span>
+                <span className="work-row__title">{project.title}</span>
+                <span className="work-row__meta">
+                  {project.year} / {project.role}
+                </span>
+                <span className="work-row__arrow" aria-hidden="true">
+                  ↗
+                </span>
+                <p>{project.description}</p>
+              </a>
             ))}
           </div>
         </section>
