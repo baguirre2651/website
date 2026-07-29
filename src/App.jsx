@@ -272,21 +272,26 @@ export default function App() {
             </div>
             <div className="about-copy">
               <h3>I&apos;m Bryan Aguirre</h3>
-              <p className="about-tag">Data Scientist, Designer, Creative Technologist</p>
+              <p className="about-tag">AI Engineer, Product Builder, Creative Technologist</p>
               <p>
-                I&apos;m a Long Beach native and UC Berkeley grad with a Data
-                Science degree and Economics emphasis, now based in New York
-                City. Most recently I was a Data Scientist at Y=X, building
-                predictive models and dashboards for fintech.
+                I&apos;m a UC Berkeley graduate with a degree in Data Science
+                and an emphasis in Economics, now based in New York City. My
+                work sits at the intersection of AI engineering, product
+                development, and business strategy. I build intelligent systems
+                and digital products that transform complex data into practical,
+                user-centered solutions and measurable business value.
               </p>
               <p>
-                On the side I&apos;m the founder of{" "}
+                I&apos;m also the founder of{" "}
                 <a href="https://www.iso-us.com" target="_blank" rel="noreferrer">
                   In Search Of
                 </a>
-                , a fashion-tech commerce platform and demand-driven reverse
-                marketplace. Bilingual in Spanish and English, usually making
-                short-form videos when I&apos;m not behind a keyboard.
+                , a fashion-technology platform and demand-driven reverse
+                marketplace. Through this work, I combine my interdisciplinary
+                background in AI, data science, full-stack engineering, design,
+                product strategy, and business development to take ideas from
+                early concept to market-ready products. I&apos;m bilingual in
+                English and Spanish.
               </p>
               <div className="about-details">
                 <p><span>Email :</span> baguirre2651@berkeley.edu</p>
@@ -301,15 +306,6 @@ export default function App() {
                 >
                   <i className="fas fa-file-alt"></i>
                   Resume
-                </a>
-                <a
-                  className="button button--inline"
-                  href="https://www.youtube.com/@b.ryanaguirre"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fab fa-youtube"></i>
-                  YouTube
                 </a>
               </div>
             </div>
